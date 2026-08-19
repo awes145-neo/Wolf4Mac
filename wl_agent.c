@@ -944,8 +944,10 @@ void ClipMove (objtype *ob, int32_t xmove, int32_t ymove)
         return;         // walk through walls
 #endif
 
+#ifndef DISABLEANNOYINGSNDS
     if (!SD_SoundPlaying())
         SD_PlaySound (HITWALLSND);
+#endif
 
     ob->x = basex+xmove;
     ob->y = basey;
@@ -1154,8 +1156,10 @@ void Cmd_Use (void)
         buttonheld[bt_use] = true;
         OperateDoor (doornum & ~BIT_DOOR);
     }
+    #ifndef DISABLEANNOYINGSNDS
     else
         SD_PlaySound (DONOTHINGSND);
+    #endif
 }
 
 /*
