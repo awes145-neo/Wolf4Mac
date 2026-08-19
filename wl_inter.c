@@ -1045,7 +1045,7 @@ DrawHighScores (void)
         //
         // level
         //
-        snprintf(buffer, sizeof(buffer), "%d", s->episode + 1);
+        snprintf(buffer, sizeof(buffer), "%d", s->completed);
 #ifndef SPEAR
         for (str = buffer; *str; str++)
             *str = *str + (129 - '0');  // Used fixed-width numbers (129...)
