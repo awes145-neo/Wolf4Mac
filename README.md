@@ -54,6 +54,8 @@ Controls for the macOS version are as follows:
 | Space | Open Doors/Push Wall |
 | Shift | Run |
 
+It is recommended to disable the ^← and ^→ shortcut keys to prevent you from accidentally switching between desktops (or in the case of macOS versions with Game Mode, preventing you from turning and shooting). To do this, go to System Preferences -> Keyboard -> Keyboard Shortcuts -> Mission Control and uncheck the "Mission Control" box.
+
 # Starting with Arguments
 Open up a terminal window in the directory where Wolf4SDL is stored, and run:
 ```
