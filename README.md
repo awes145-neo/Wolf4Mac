@@ -1,13 +1,18 @@
-# Wolf4SDL-macOS
-A fork of KS-Presto's Wolf4SDL which lets you compile the game on macOS, given that you have a Mac running macOS Big Sur 11.5 or later.
+# Wolf4SDL
+A general-purpose fork of Wolf4SDL that fixes various bugs found while compiling on Linux or macOS platforms.
 
-(tested on a MacBook Air M5, macOS Tahoe 26.6.1)
+Tested on:
+- macOS 26.6.2, MacBook Air (M5, 2025)
+- macOS 12.7.6, Mac mini (i5, 2014)
 
 # Why can't I just use Presto's fork for compilation already?
 Long story short: it's broken. Files aren't placed where they're supposed to be and, all in all, it's just a big, giant, heaping mess.
 
 # Prerequisites
 This version of Wolf4SDL is based off of KS-Presto's Wolf4SDL2 fork. As such you will need to install various SDL2 libraries, namely SDL2 and SDL2_mixer.
+
+## macOS
+Your Mac will need to run macOS 11.5 to compile successfully.
 
 For macOS, grab [SDL2 v2.32.8](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.8) and [SDL2_mixer v2.8.2](https://github.com/libsdl-org/SDL_mixer/releases/tag/release-2.8.2). Each release should have a downloadable DMG file to mount.
 
@@ -16,6 +21,7 @@ To install them, you can drag and drop each of the *.framework folders into /Lib
 **NOTE: if you are a user of the Mac without administrator privileges, you can copy the frameworks to /User/(name)/Library/Frameworks**
 
 Those should be all of the prerequisites you need. If Xcode throws any errors, you can try redefining the names of the frameworks in the Project Navigator.
+
 # Compiling
 To compile this version of Wolf4SDL, grab [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) from the macOS App Store. Open Xcode and click "Clone Git Repository...". In the top "Enter repository URL..." box, type in:
 ```
