@@ -5,6 +5,8 @@ Tested on:
 - macOS 26.6.2, MacBook Air (M5, 2025)
 - macOS 12.7.6, Mac mini (i5, 2014)
 
+The releases are currently compiled for ARM64, soon Intel binaries will be available.
+
 # Why can't I just use Presto's fork for compilation already?
 Long story short: it's broken. Files aren't placed where they're supposed to be and, all in all, it's just a big, giant, heaping mess.
 
@@ -38,7 +40,7 @@ This is where all the necessary files for compiling the project should be.
 To compile the project, you can press either the Play icon (next to the window buttons) or press ⌘B. To get to the folder where Wolf4SDL has been built: `Menu Bar -> Product -> Show Build Folder in Finder`. The app bundle will be in `Products -> Debug -> Wolf4SDL.app`.
 
 # Playing the Game
-Place the .app in the same folder where your game files are (e.g., WL6). It will not work if all of the files are uppercase, so you will need to rename them all to have a lowercase standard.
+Place the .app in the same folder where your game files are (e.g., WL6). If you are using a case-sensitive file system (not the default anymore usually, but can be if you're on HFS+), rename all your data files to lowercase. (e.g., WL6 -> wl6, SOD -> sod)
 
 After all that, double click the app bundle to start playing!
 
