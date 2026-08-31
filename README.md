@@ -57,7 +57,7 @@ Load up your Luger, kill some Nazis, and Escape Wolfenstein!
 # Controls
 Controls for the macOS version are as follows:
 | Key (Mac) | Key (Windows) | Action |
-| :--- | :--- |
+| :--- | :--- | :--- |
 | Arrows | Arrows | Move |
 | ^ (control) | Ctrl | Shoot |
 | ⌥ (option) | Alt | Strafe |
