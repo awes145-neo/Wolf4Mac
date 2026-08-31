@@ -105,13 +105,13 @@
 typedef struct {
                 short x,y,amount,curpos,indent;
                 } CP_iteminfo;
-
+#pragma pack(push, 8) // temporary fault
 typedef struct {
                 short active;
                 char string[36];
                 int (* routine)(int temp1);
                 } CP_itemtype;
-
+#pragma pack(1) // now we resume normal programming
 typedef struct {
                 short allowed[4];
                 } CustomCtrls;

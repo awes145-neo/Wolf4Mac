@@ -2,9 +2,14 @@
 A general-purpose fork of Wolf4SDL that fixes various bugs found while compiling on Linux or macOS platforms.
 
 Tested on:
-- macOS 26.6.2, MacBook Air (M5, 2025)
-- macOS 12.7.6, Mac mini (i5, 2014)
-- macOS 10.14.6, Mac mini (i5, 2014)
+
+| OS | Hardware |
+| :--- | :--- |
+| macOS 27 Public Beta 5 | MacBook Air (M5, 2025) |
+| macOS 26.6.2 | MacBook Air (M5, 2025) |
+| macOS 12.7.6 | Mac mini (i5, 2014) |
+| macOS 10.14.6 | Mac mini (i5, 2014) |
+| Mac OS X 10.7.5 | VMware Fusion 11.5 |
 
 The releases are currently compiled for ARM64, soon Intel binaries will be available.
 
@@ -15,7 +20,9 @@ Long story short: it's broken. Files aren't placed where they're supposed to be 
 This version of Wolf4SDL is based off of KS-Presto's Wolf4SDL2 fork. As such you will need to install various SDL2 libraries, namely SDL2 and SDL2_mixer.
 
 ## macOS
-Your Mac will need to *at least* run macOS 11.5 to compile successfully. However, this is able to be compiled while targeting macOS 10.9. You will need to edit the pbxproj file to let the xcodeproj open in earlier Xcode versions.
+Your Mac will need to *at least* run macOS 14.6 to compile successfully. However, this is able to be compiled while targeting macOS 10.9. You will need to edit the pbxproj file to let the xcodeproj open in earlier Xcode versions. (change the line "objectVersion = 54;" to "objectVersion = 46;")
+
+If you're compiling for earlier versions, don't forget to change the deployment target or else compilation will fail.
 
 For macOS, grab [SDL2 v2.32.8](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.8) and [SDL2_mixer v2.8.2](https://github.com/libsdl-org/SDL_mixer/releases/tag/release-2.8.2). Each release should have a downloadable DMG file to mount.
 
@@ -49,13 +56,13 @@ Load up your Luger, kill some Nazis, and Escape Wolfenstein!
 
 # Controls
 Controls for the macOS version are as follows:
-| Key | Action |
+| Key (Mac) | Key (Windows) | Action |
 | :--- | :--- |
-| Arrows | Move |
-| ^ (control) | Shoot |
-| ⌥ (option) | Strafe |
-| Space | Open Doors/Push Wall |
-| Shift | Run |
+| Arrows | Arrows | Move |
+| ^ (control) | Ctrl | Shoot |
+| ⌥ (option) | Alt | Strafe |
+| Space | Space | Open Doors/Push Wall |
+| Shift | Shift | Run |
 
 It is recommended to disable the ^← and ^→ shortcut keys to prevent you from accidentally switching between desktops (or in the case of macOS versions with Game Mode, preventing you from turning and shooting). To do this, go to System Preferences -> Keyboard -> Keyboard Shortcuts -> Mission Control and uncheck the "Mission Control" box.
 

@@ -1,3 +1,12 @@
+Wolf4SDL v2.2
+ - Changed popup text.
+ - Fixed compilation errors on Xcode 27.
+
+Wolf4SDL v2.1
+ - Added fixes for 64-bit improper conversions.
+ - Added a VERSION.H switch which lets the user disable annoying sounds.
+ - Fixed up the Xcode Project file.
+
 Wolf4SDL v2.0
  - Added SDL2 support (thanks to zZeck)
  - TAB-T RESTORED! Yes!

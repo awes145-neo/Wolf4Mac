@@ -800,7 +800,7 @@ typedef struct doorstruct
 //
 //--------------------
 
-typedef struct objstruct
+typedef struct __attribute__((aligned(8))) objstruct // ARM64 alignment fix
 {
     int8_t      active;
     short       ticcount;
@@ -835,7 +835,7 @@ typedef struct objstruct
     struct objstruct *next,*prev;
 } objtype;
 
-
+#pragma pack(push, 8) // patch for ARM64 macs
 typedef struct statestruct
 {
     boolean rotate;
@@ -844,7 +844,7 @@ typedef struct statestruct
     void    (*think)(objtype *),(*action)(objtype *);
     struct  statestruct *next;
 } statetype;
-
+#pragma pack(1) // now we resume normal programming...
 
 typedef struct
 {
