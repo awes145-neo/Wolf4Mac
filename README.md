@@ -4,6 +4,7 @@ A general-purpose fork of Wolf4SDL that fixes various bugs found while compiling
 Tested on:
 - macOS 26.6.2, MacBook Air (M5, 2025)
 - macOS 12.7.6, Mac mini (i5, 2014)
+- macOS 10.14.6, Mac mini (i5, 2014)
 
 The releases are currently compiled for ARM64, soon Intel binaries will be available.
 
@@ -14,7 +15,7 @@ Long story short: it's broken. Files aren't placed where they're supposed to be 
 This version of Wolf4SDL is based off of KS-Presto's Wolf4SDL2 fork. As such you will need to install various SDL2 libraries, namely SDL2 and SDL2_mixer.
 
 ## macOS
-Your Mac will need to run macOS 11.5 to compile successfully.
+Your Mac will need to *at least* run macOS 11.5 to compile successfully. However, this is able to be compiled while targeting macOS 10.9. You will need to edit the pbxproj file to let the xcodeproj open in earlier Xcode versions.
 
 For macOS, grab [SDL2 v2.32.8](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.8) and [SDL2_mixer v2.8.2](https://github.com/libsdl-org/SDL_mixer/releases/tag/release-2.8.2). Each release should have a downloadable DMG file to mount.
 
