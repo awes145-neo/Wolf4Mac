@@ -11,8 +11,6 @@ Tested on:
 | macOS 10.14.6 | Mac mini (i5, 2014) |
 | Mac OS X 10.7.5 | VMware Fusion 11.5 |
 
-The releases are currently compiled for ARM64, soon Intel binaries will be available.
-
 # Why can't I just use Presto's fork for compilation already?
 Long story short: it's broken. Files aren't placed where they're supposed to be and, all in all, it's just a big, giant, heaping mess.
 
@@ -26,6 +24,8 @@ If you're compiling for earlier versions, don't forget to change the deployment 
 
 For macOS, grab [SDL2 v2.32.8](https://github.com/libsdl-org/SDL/releases/tag/release-2.32.8) and [SDL2_mixer v2.8.2](https://github.com/libsdl-org/SDL_mixer/releases/tag/release-2.8.2). Each release should have a downloadable DMG file to mount.
 
+If you're using a macOS version earlier than OS X Mavericks (10.9), you will need to grab [SDL2 v2.0.22](https://github.com/libsdl-org/SDL/releases/tag/release-2.0.22) and [SDL2_mixer v2.6.0](https://github.com/libsdl-org/SDL_mixer/releases/tag/release-2.6.0).
+
 To install them, you can drag and drop each of the *.framework folders into /Library/Frameworks.
 
 **NOTE: if you are a user of the Mac without administrator privileges, you can copy the frameworks to /User/(name)/Library/Frameworks**
@@ -35,13 +35,13 @@ Those should be all of the prerequisites you need. If Xcode throws any errors, y
 # Compiling
 To compile this version of Wolf4SDL, grab [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) from the macOS App Store. Open Xcode and click "Clone Git Repository...". In the top "Enter repository URL..." box, type in:
 ```
-https://github.com/Awesome-neos145/Wolf4SDL-macOS.git
+https://github.com/Awesome-neos145/MacWolf4SDL2.git
 ```
 Save it to your User directory or wherever it suits you best.
 
 Then in Xcode, click "Open Existing Project". Head over to:
 ```
-/pathto/Wolf4SDL-macOS/macosx
+/pathto/MacWolf4SDL2/macosx
 ```
 This is where all the necessary files for compiling the project should be.
 
