@@ -1589,11 +1589,10 @@ void CheckParameters(int argc, char *argv[])
 {
     const char *header =
     {
-        "Wolf4SDL v2.0\n"
+        "Wolf4SDL v2.1\n"
         "Ported by Chaos-Software, additions by the community\n"
         "Original Wolfenstein 3D by id Software\n"
-        "Usage: Wolf4SDL [options]\n"
-        "See Options.txt for help\n\n"
+        "Patches by awes145\n\n"
     };
 
     int    i;
@@ -1748,6 +1747,10 @@ void CheckParameters(int argc, char *argv[])
                         snprintf (configdir,sizeof(configdir),"%s",argv[i]);
                 }
             }
+        }
+        else IFARG("--woody")
+        {
+            snprintf (error, sizeof(error), "YEE HAW");
         }
         else IFARG("--goodtimes")
             param_goodtimes = true;
