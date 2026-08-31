@@ -1,4 +1,6 @@
-# Wolf4SDL
+# MacWolf4SDL2
+
+## Not to be confused with [MacenWolf](https://www.moddb.com/mods/macenwolf), [MacWolfSDL](https://github.com/kaylagator/MacWolfSDL), or MacWolf.
 A general-purpose fork of Wolf4SDL that fixes various bugs found while compiling on Linux or macOS platforms.
 
 Tested on:
