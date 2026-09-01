@@ -36,13 +36,13 @@ Those should be all of the prerequisites you need. If Xcode throws any errors, y
 # Compiling
 To compile this version of Wolf4SDL, grab [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) from the macOS App Store. Open Xcode and click "Clone Git Repository...". In the top "Enter repository URL..." box, type in:
 ```
-https://github.com/Awesome-neos145/MacWolf4SDL2.git
+https://github.com/Awesome-neos145/Wolf4Mac.git
 ```
 Save it to your User directory or wherever it suits you best.
 
 Then in Xcode, click "Open Existing Project". Head over to:
 ```
-/pathto/MacWolf4SDL2/macosx
+/pathto/Wolf4Mac/macosx
 ```
 This is where all the necessary files for compiling the project should be.
 
@@ -77,3 +77,5 @@ To enable debug mode, add --goobers. Then, while in-game, press ⌥⇧⌫. (Opti
 KS-Presto for his original Wolf4SDL2 fork.
 
 SDL
+
+JackfeldSeinfeld for giving me the idea for the name.
