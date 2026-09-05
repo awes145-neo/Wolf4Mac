@@ -1,4 +1,4 @@
-Wolf4SDL v2.2
+Wolf4Mac v2.2
  - Changed popup text.
  - Fixed compilation errors on Xcode 27.
 

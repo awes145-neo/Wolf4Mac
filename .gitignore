@@ -1,3 +1,6 @@
 .DS_Store
 *.dSYM/
 xcuserdata
+*.d
+*.o
+wolf4sdl
